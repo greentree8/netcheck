@@ -148,7 +148,7 @@ NET_CHECK() {
         # var_speedtest_interval=$(($SECONDS / 60))
         # echo -ne "var_speedtest_interval:    "
         echo -ne "var_speedtest_interval: $var_speedtest_interval"\\r
-        if (( $var_speedtest_interval > 100 )); then
+        if (( $var_speedtest_interval > 25 )); then
           var_speedtest_interval=0
           # run the speed test
           PRINT_SPEEDTEST
